@@ -1,0 +1,447 @@
+<?xml version="1.0"?>
+<Panel Type="Vector.CANalyzer.Panels.PanelSerializer, Vector.CANalyzer.Panels.Serializer, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null">
+  <Object Type="Vector.CANalyzer.Panels.Runtime.Panel, Vector.CANalyzer.Panels.Common, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="Panel" Children="Controls" ControlName="ControlPanel">
+    <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl6" Children="Controls" ControlName="Group Box 6">
+      <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl9" Children="Controls" ControlName="Group Box 8">
+        <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl4" ControlName="LED Control 4">
+          <Property Name="Name">LEDControl4</Property>
+          <Property Name="Size">18, 18</Property>
+          <Property Name="Location">4, 23</Property>
+          <Property Name="UsedLEDColorOn">Green</Property>
+          <Property Name="UsedLEDColorOff">Red</Property>
+          <Property Name="SymbolConfiguration">5;1;HW5;;;env_MotorState;1;;;-1;;;</Property>
+          <Property Name="TabIndex">5</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl5" Children="Controls" ControlName="Static Text 5">
+          <Property Name="Name">StaticTextControl5</Property>
+          <Property Name="Size">80, 13</Property>
+          <Property Name="Location">27, 49</Property>
+          <Property Name="Text">System LOKED</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl4" Children="Controls" ControlName="Static Text 4">
+          <Property Name="Name">StaticTextControl4</Property>
+          <Property Name="Size">33, 13</Property>
+          <Property Name="Location">26, 23</Property>
+          <Property Name="Text">Motor</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl5" ControlName="LED Control 5">
+          <Property Name="Name">LEDControl5</Property>
+          <Property Name="Size">19, 18</Property>
+          <Property Name="Location">4, 49</Property>
+          <Property Name="UsedLEDColorOn">Green</Property>
+          <Property Name="UsedLEDColorOff">Red</Property>
+          <Property Name="SymbolConfiguration">5;1;HW5;;;env_System_Status;1;;;-1;;;</Property>
+          <Property Name="TabIndex">9</Property>
+        </Object>
+        <Property Name="Name">GroupBoxControl9</Property>
+        <Property Name="Size">116, 118</Property>
+        <Property Name="Location">447, 34</Property>
+        <Property Name="Text">System Status</Property>
+        <Property Name="TabIndex">11</Property>
+      </Object>
+      <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl8" Children="Controls" ControlName="Group Box">
+        <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl15" Children="Controls" ControlName="Static Text 16">
+          <Property Name="Name">StaticTextControl15</Property>
+          <Property Name="Size">45, 13</Property>
+          <Property Name="Location">111, 70</Property>
+          <Property Name="Text">Reverse</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl14" Children="Controls" ControlName="Static Text 15">
+          <Property Name="Name">StaticTextControl14</Property>
+          <Property Name="Size">32, 13</Property>
+          <Property Name="Location">111, 48</Property>
+          <Property Name="Text">Sport</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl13" Children="Controls" ControlName="Static Text 14">
+          <Property Name="Name">StaticTextControl13</Property>
+          <Property Name="Size">30, 13</Property>
+          <Property Name="Location">111, 26</Property>
+          <Property Name="Text">Drive</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl12" Children="Controls" ControlName="Static Text 13">
+          <Property Name="Name">StaticTextControl12</Property>
+          <Property Name="Size">29, 13</Property>
+          <Property Name="Location">27, 93</Property>
+          <Property Name="Text">Error</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl11" Children="Controls" ControlName="Static Text 12">
+          <Property Name="Name">StaticTextControl11</Property>
+          <Property Name="Size">37, 13</Property>
+          <Property Name="Location">27, 70</Property>
+          <Property Name="Text">Neutal</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl10" Children="Controls" ControlName="Static Text 11">
+          <Property Name="Name">StaticTextControl10</Property>
+          <Property Name="Size">27, 13</Property>
+          <Property Name="Location">27, 48</Property>
+          <Property Name="Text">Park</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl9" Children="Controls" ControlName="Static Text 9">
+          <Property Name="Name">StaticTextControl9</Property>
+          <Property Name="Size">51, 13</Property>
+          <Property Name="Location">27, 27</Property>
+          <Property Name="Text">Unknown</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl15" ControlName="LED Control 15">
+          <Property Name="Name">LEDControl15</Property>
+          <Property Name="Size">19, 18</Property>
+          <Property Name="Location">88, 70</Property>
+          <Property Name="UsedLEDColorOn">Green</Property>
+          <Property Name="UsedLEDColorOff">Red</Property>
+          <Property Name="SymbolConfiguration">5;1;HW5;;;env_PositionGB_R;1;;;-1;;;</Property>
+          <Property Name="TabIndex">22</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl14" ControlName="LED Control 14">
+          <Property Name="Name">LEDControl14</Property>
+          <Property Name="Size">19, 18</Property>
+          <Property Name="Location">88, 49</Property>
+          <Property Name="UsedLEDColorOn">Green</Property>
+          <Property Name="UsedLEDColorOff">Red</Property>
+          <Property Name="SymbolConfiguration">5;1;HW5;;;env_PositionGB_S;1;;;-1;;;</Property>
+          <Property Name="TabIndex">21</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl13" ControlName="LED Control 13">
+          <Property Name="Name">LEDControl13</Property>
+          <Property Name="Size">19, 18</Property>
+          <Property Name="Location">88, 26</Property>
+          <Property Name="UsedLEDColorOn">Green</Property>
+          <Property Name="UsedLEDColorOff">Red</Property>
+          <Property Name="SymbolConfiguration">5;1;HW5;;;env_PositionGB_D;1;;;-1;;;</Property>
+          <Property Name="TabIndex">20</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl12" ControlName="LED Control 12">
+          <Property Name="Name">LEDControl12</Property>
+          <Property Name="Size">19, 18</Property>
+          <Property Name="Location">4, 93</Property>
+          <Property Name="UsedLEDColorOn">Green</Property>
+          <Property Name="UsedLEDColorOff">Red</Property>
+          <Property Name="SymbolConfiguration">5;1;HW5;;;env_PositionGB_Error;1;;;-1;;;</Property>
+          <Property Name="TabIndex">19</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl11" ControlName="LED Control 11">
+          <Property Name="Name">LEDControl11</Property>
+          <Property Name="Size">19, 18</Property>
+          <Property Name="Location">4, 71</Property>
+          <Property Name="UsedLEDColorOn">Green</Property>
+          <Property Name="UsedLEDColorOff">Red</Property>
+          <Property Name="SymbolConfiguration">5;1;HW5;;;env_PositionGB_N;1;;;-1;;;</Property>
+          <Property Name="TabIndex">18</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl10" ControlName="LED Control 10">
+          <Property Name="Name">LEDControl10</Property>
+          <Property Name="Size">19, 18</Property>
+          <Property Name="Location">4, 49</Property>
+          <Property Name="UsedLEDColorOn">Green</Property>
+          <Property Name="UsedLEDColorOff">Red</Property>
+          <Property Name="SymbolConfiguration">5;1;HW5;;;env_PositionGB_P;1;;;-1;;;</Property>
+          <Property Name="TabIndex">17</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl9" ControlName="LED Control 9">
+          <Property Name="Name">LEDControl9</Property>
+          <Property Name="Size">19, 18</Property>
+          <Property Name="Location">4, 26</Property>
+          <Property Name="UsedLEDColorOn">Green</Property>
+          <Property Name="UsedLEDColorOff">Red</Property>
+          <Property Name="SymbolConfiguration">5;1;HW5;;;env_PositionGB_Unknown;1;;;-1;;;</Property>
+          <Property Name="TabIndex">16</Property>
+        </Object>
+        <Property Name="Name">GroupBoxControl8</Property>
+        <Property Name="Size">173, 122</Property>
+        <Property Name="Location">259, 31</Property>
+        <Property Name="Text">GearBox Status</Property>
+        <Property Name="TabIndex">2</Property>
+      </Object>
+      <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl7" Children="Controls" ControlName="Group Box 7">
+        <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl8" Children="Controls" ControlName="Static Text 8">
+          <Property Name="Name">StaticTextControl8</Property>
+          <Property Name="Size">93, 13</Property>
+          <Property Name="Location">29, 70</Property>
+          <Property Name="Text">In The Car</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7" Children="Controls" ControlName="Static Text 7">
+          <Property Name="Name">StaticTextControl7</Property>
+          <Property Name="Size">69, 13</Property>
+          <Property Name="Location">29, 49</Property>
+          <Property Name="Text">Near The Car</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl6" Children="Controls" ControlName="Static Text 6">
+          <Property Name="Name">StaticTextControl6</Property>
+          <Property Name="Size">72, 13</Property>
+          <Property Name="Location">29, 27</Property>
+          <Property Name="Text">Out Of Range</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl8" ControlName="LED Control 8">
+          <Property Name="Name">LEDControl8</Property>
+          <Property Name="Size">19, 18</Property>
+          <Property Name="Location">6, 72</Property>
+          <Property Name="UsedLEDColorOn">Green</Property>
+          <Property Name="UsedLEDColorOff">Red</Property>
+          <Property Name="SymbolConfiguration">5;1;HW5;;;env_Key_In;1;;;-1;;;</Property>
+          <Property Name="TabIndex">13</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl7" ControlName="LED Control 7">
+          <Property Name="Name">LEDControl7</Property>
+          <Property Name="Size">19, 18</Property>
+          <Property Name="Location">6, 49</Property>
+          <Property Name="UsedLEDColorOn">Green</Property>
+          <Property Name="UsedLEDColorOff">Red</Property>
+          <Property Name="SymbolConfiguration">5;1;HW5;;;env_Key_Near;1;;;-1;;;</Property>
+          <Property Name="TabIndex">12</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl6" ControlName="LED Control 6">
+          <Property Name="Name">LEDControl6</Property>
+          <Property Name="Size">19, 18</Property>
+          <Property Name="Location">6, 27</Property>
+          <Property Name="UsedLEDColorOn">Green</Property>
+          <Property Name="UsedLEDColorOff">Red</Property>
+          <Property Name="SymbolConfiguration">5;1;HW5;;;env_Key_Out;1;;;-1;;;</Property>
+          <Property Name="TabIndex">11</Property>
+        </Object>
+        <Property Name="Name">GroupBoxControl7</Property>
+        <Property Name="Size">126, 122</Property>
+        <Property Name="Location">120, 30</Property>
+        <Property Name="Text">Key Status</Property>
+        <Property Name="TabIndex">1</Property>
+      </Object>
+      <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl1" Children="Controls" ControlName="Group Box 1">
+        <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl16" Children="Controls" ControlName="Static Text 0">
+          <Property Name="Name">StaticTextControl16</Property>
+          <Property Name="Size">48, 13</Property>
+          <Property Name="Location">27, 32</Property>
+          <Property Name="Text">OFF</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl16" ControlName="LED Control 16">
+          <Property Name="Name">LEDControl16</Property>
+          <Property Name="Size">19, 18</Property>
+          <Property Name="Location">4, 27</Property>
+          <Property Name="UsedLEDColorOn">Green</Property>
+          <Property Name="UsedLEDColorOff">Red</Property>
+          <Property Name="SwitchValueOn">0</Property>
+          <Property Name="SwitchValueOff">1</Property>
+          <Property Name="SymbolConfiguration">5;1;HW5;;;env_KL_Status;1;;;-1;;;</Property>
+          <Property Name="TabIndex">3</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl3" Children="Controls" ControlName="Static Text 3">
+          <Property Name="Name">StaticTextControl3</Property>
+          <Property Name="Size">37, 13</Property>
+          <Property Name="Location">27, 98</Property>
+          <Property Name="Text">KL_50</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl2" Children="Controls" ControlName="Static Text 2">
+          <Property Name="Name">StaticTextControl2</Property>
+          <Property Name="Size">37, 13</Property>
+          <Property Name="Location">27, 77</Property>
+          <Property Name="Text">KL_15</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl1" Children="Controls" ControlName="Static Text 1">
+          <Property Name="Name">StaticTextControl1</Property>
+          <Property Name="Size">26, 13</Property>
+          <Property Name="Location">27, 55</Property>
+          <Property Name="Text">KLS</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl3" ControlName="LED Control 3">
+          <Property Name="Name">LEDControl3</Property>
+          <Property Name="Size">18, 18</Property>
+          <Property Name="Location">4, 94</Property>
+          <Property Name="UsedLEDColorOn">Green</Property>
+          <Property Name="UsedLEDColorOff">Red</Property>
+          <Property Name="SymbolConfiguration">5;1;HW5;;;env_KL50;1;;;-1;;;</Property>
+          <Property Name="TabIndex">2</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl2" ControlName="LED Control 2">
+          <Property Name="Name">LEDControl2</Property>
+          <Property Name="Size">18, 18</Property>
+          <Property Name="Location">4, 72</Property>
+          <Property Name="UsedLEDColorOn">Green</Property>
+          <Property Name="UsedLEDColorOff">Red</Property>
+          <Property Name="SymbolConfiguration">5;1;HW5;;;env_KL15;1;;;-1;;;</Property>
+          <Property Name="TabIndex">1</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl1" ControlName="LED Control 1">
+          <Property Name="Name">LEDControl1</Property>
+          <Property Name="Size">18, 18</Property>
+          <Property Name="Location">4, 49</Property>
+          <Property Name="UsedLEDColorOn">Green</Property>
+          <Property Name="UsedLEDColorOff">Red</Property>
+          <Property Name="SymbolConfiguration">5;1;HW5;;;env_KLS;1;;;-1;;;</Property>
+          <Property Name="TabIndex">0</Property>
+        </Object>
+        <Property Name="Name">GroupBoxControl1</Property>
+        <Property Name="Size">104, 122</Property>
+        <Property Name="Location">4, 30</Property>
+        <Property Name="Text">KL Status</Property>
+        <Property Name="TabIndex">0</Property>
+      </Object>
+      <Property Name="Name">GroupBoxControl6</Property>
+      <Property Name="Size">572, 169</Property>
+      <Property Name="Location">475, 13</Property>
+      <Property Name="Text">Status Panel</Property>
+      <Property Name="TabIndex">3</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl3" Children="Controls" ControlName="Group Box 3">
+      <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl5" Children="Controls" ControlName="Group Box 5">
+        <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl14" Children="Controls" ControlName="Button 14">
+          <Property Name="Name">ButtonControl14</Property>
+          <Property Name="Size">75, 25</Property>
+          <Property Name="Location">51, 104</Property>
+          <Property Name="ReleaseValue">6</Property>
+          <Property Name="PressValue">6</Property>
+          <Property Name="Text">Error</Property>
+          <Property Name="SymbolConfiguration">5;1;HW5;;;env_GearBoxPosition;1;;;-1;;;</Property>
+          <Property Name="TabIndex">12</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl13" Children="Controls" ControlName="Button 13">
+          <Property Name="Name">ButtonControl13</Property>
+          <Property Name="Size">75, 25</Property>
+          <Property Name="Location">91, 77</Property>
+          <Property Name="ReleaseValue">5</Property>
+          <Property Name="PressValue">5</Property>
+          <Property Name="Text">Reverse</Property>
+          <Property Name="SymbolConfiguration">5;1;HW5;;;env_GearBoxPosition;1;;;-1;;;</Property>
+          <Property Name="TabIndex">11</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl12" Children="Controls" ControlName="Button 12">
+          <Property Name="Name">ButtonControl12</Property>
+          <Property Name="Size">75, 25</Property>
+          <Property Name="Location">91, 47</Property>
+          <Property Name="ReleaseValue">4</Property>
+          <Property Name="PressValue">4</Property>
+          <Property Name="Text">Sport</Property>
+          <Property Name="SymbolConfiguration">5;1;HW5;;;env_GearBoxPosition;1;;;-1;;;</Property>
+          <Property Name="TabIndex">10</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl10" Children="Controls" ControlName="Button 11">
+          <Property Name="Name">ButtonControl10</Property>
+          <Property Name="Size">75, 25</Property>
+          <Property Name="Location">91, 18</Property>
+          <Property Name="ReleaseValue">3</Property>
+          <Property Name="PressValue">3</Property>
+          <Property Name="Text">Drive</Property>
+          <Property Name="SymbolConfiguration">5;1;HW5;;;env_GearBoxPosition;1;;;-1;;;</Property>
+          <Property Name="TabIndex">9</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl9" Children="Controls" ControlName="Button 10">
+          <Property Name="Name">ButtonControl9</Property>
+          <Property Name="Size">75, 25</Property>
+          <Property Name="Location">4, 77</Property>
+          <Property Name="ReleaseValue">2</Property>
+          <Property Name="PressValue">2</Property>
+          <Property Name="Text">Neutral</Property>
+          <Property Name="SymbolConfiguration">5;1;HW5;;;env_GearBoxPosition;1;;;-1;;;</Property>
+          <Property Name="TabIndex">8</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl8" Children="Controls" ControlName="Button 9">
+          <Property Name="Name">ButtonControl8</Property>
+          <Property Name="Size">75, 25</Property>
+          <Property Name="Location">4, 47</Property>
+          <Property Name="ReleaseValue">1</Property>
+          <Property Name="Text">Park</Property>
+          <Property Name="SymbolConfiguration">5;1;HW5;;;env_GearBoxPosition;1;;;-1;;;</Property>
+          <Property Name="TabIndex">7</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl11" Children="Controls" ControlName="Button 8">
+          <Property Name="Name">ButtonControl11</Property>
+          <Property Name="Size">75, 25</Property>
+          <Property Name="Location">4, 18</Property>
+          <Property Name="PressValue">0</Property>
+          <Property Name="Text">Unknown</Property>
+          <Property Name="SymbolConfiguration">5;1;HW5;;;env_GearBoxPosition;1;;;-1;;;</Property>
+          <Property Name="TabIndex">3</Property>
+        </Object>
+        <Property Name="Name">GroupBoxControl5</Property>
+        <Property Name="Size">169, 133</Property>
+        <Property Name="Location">259, 25</Property>
+        <Property Name="Text">GearBox Position</Property>
+        <Property Name="TabIndex">3</Property>
+      </Object>
+      <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl4" Children="Controls" ControlName="Group Box 4">
+        <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl7" Children="Controls" ControlName="Button 7">
+          <Property Name="Name">ButtonControl7</Property>
+          <Property Name="Size">80, 33</Property>
+          <Property Name="Location">4, 96</Property>
+          <Property Name="ReleaseValue">2</Property>
+          <Property Name="PressValue">2</Property>
+          <Property Name="Text">In The Car</Property>
+          <Property Name="SymbolConfiguration">5;1;HW5;;;env_KeyPosition;1;;;-1;;;</Property>
+          <Property Name="TabIndex">2</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl6" Children="Controls" ControlName="Button 6">
+          <Property Name="Name">ButtonControl6</Property>
+          <Property Name="Size">80, 33</Property>
+          <Property Name="Location">4, 58</Property>
+          <Property Name="ReleaseValue">1</Property>
+          <Property Name="Text">Near The Car</Property>
+          <Property Name="SymbolConfiguration">5;1;HW5;;;env_KeyPosition;1;;;-1;;;</Property>
+          <Property Name="TabIndex">1</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl5" Children="Controls" ControlName="Button 5">
+          <Property Name="Name">ButtonControl5</Property>
+          <Property Name="Size">80, 33</Property>
+          <Property Name="Location">4, 21</Property>
+          <Property Name="PressValue">0</Property>
+          <Property Name="Text">Out Of Range</Property>
+          <Property Name="SymbolConfiguration">5;1;HW5;;;env_KeyPosition;1;;;-1;;;</Property>
+          <Property Name="TabIndex">0</Property>
+        </Object>
+        <Property Name="Name">GroupBoxControl4</Property>
+        <Property Name="Size">93, 133</Property>
+        <Property Name="Location">135, 25</Property>
+        <Property Name="Text">Key Position</Property>
+        <Property Name="TabIndex">2</Property>
+      </Object>
+      <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl2" Children="Controls" ControlName="Group Box 2">
+        <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl4" Children="Controls" ControlName="Button 4">
+          <Property Name="Name">ButtonControl4</Property>
+          <Property Name="Size">75, 23</Property>
+          <Property Name="Location">4, 104</Property>
+          <Property Name="ReleaseValue">3</Property>
+          <Property Name="PressValue">3</Property>
+          <Property Name="Text">KL50</Property>
+          <Property Name="SymbolConfiguration">5;1;HW5;;;env_KL_Status;1;;;-1;;;</Property>
+          <Property Name="TabIndex">3</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl3" Children="Controls" ControlName="Button 3">
+          <Property Name="Name">ButtonControl3</Property>
+          <Property Name="Size">75, 23</Property>
+          <Property Name="Location">4, 77</Property>
+          <Property Name="ReleaseValue">2</Property>
+          <Property Name="PressValue">2</Property>
+          <Property Name="Text">KL15</Property>
+          <Property Name="SymbolConfiguration">5;1;HW5;;;env_KL_Status;1;;;-1;;;</Property>
+          <Property Name="TabIndex">2</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl2" Children="Controls" ControlName="Button 2 ">
+          <Property Name="Name">ButtonControl2</Property>
+          <Property Name="Size">75, 23</Property>
+          <Property Name="Location">4, 51</Property>
+          <Property Name="ReleaseValue">1</Property>
+          <Property Name="Text">KLS</Property>
+          <Property Name="SymbolConfiguration">5;1;HW5;;;env_KL_Status;1;;;-1;;;</Property>
+          <Property Name="TabIndex">1</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.77.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl1" Children="Controls" ControlName="Button 1">
+          <Property Name="Name">ButtonControl1</Property>
+          <Property Name="Size">75, 23</Property>
+          <Property Name="Location">4, 24</Property>
+          <Property Name="PressValue">0</Property>
+          <Property Name="Text">OFF</Property>
+          <Property Name="SymbolConfiguration">5;1;HW5;;;env_KL_Status;1;;;-1;;;</Property>
+          <Property Name="TabIndex">0</Property>
+        </Object>
+        <Property Name="Name">GroupBoxControl2</Property>
+        <Property Name="Size">91, 133</Property>
+        <Property Name="Location">15, 25</Property>
+        <Property Name="Text">KL </Property>
+        <Property Name="TabIndex">1</Property>
+      </Object>
+      <Property Name="Name">GroupBoxControl3</Property>
+      <Property Name="Size">445, 174</Property>
+      <Property Name="Location">5, 8</Property>
+      <Property Name="Text">Control Panel</Property>
+      <Property Name="TabIndex">2</Property>
+    </Object>
+    <Property Name="Name">Panel</Property>
+    <Property Name="Size">1062, 199</Property>
+    <Property Name="BackColor">White</Property>
+  </Object>
+</Panel>

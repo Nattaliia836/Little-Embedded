@@ -1,0 +1,60 @@
+/*@!Encoding:1252*/
+includes
+{
+  
+}
+
+variables
+{
+  message GearBoxStatus_01 GearBoxStatus;
+  msTimer t_GearBoxStatus;
+  int s_GearBoxPosition = 0;
+  int s_KL15 = 0;
+}
+
+on start {
+  setTimerCyclic(t_GearBoxStatus, 250);
+}
+
+on message KlemmenStatus_01{
+  s_KL15 = this.KL_15;
+}
+
+on message GearActuator_01{
+  if (@env_System_Status != 1){
+    if (s_KL15 == 1)  s_GearBoxPosition = this.GearBox_Position;
+    else s_GearBoxPosition = 0;
+  }
+  else {
+    s_GearBoxPosition = 1;
+    @env_PositionGB_P = 1;
+  }
+  
+  @env_GearBoxPosition = s_GearBoxPosition;
+}
+
+on timer t_GearBoxStatus{
+  if(@env_KL15 == 1){
+    output(GearBoxStatus);
+  }
+  else{
+    @env_PositionGB_N = 0;
+    @env_PositionGB_D = 0;
+    @env_PositionGB_S = 0;
+    @env_PositionGB_R = 0;
+    @env_PositionGB_Error = 0;
+    
+    if (@env_System_Status != 1){
+      @env_GearBoxPosition = 0;
+      @env_PositionGB_Unknown = 1;
+      @env_PositionGB_P = 0;
+    } 
+    else {
+      @env_GearBoxPosition = 1;
+      @env_PositionGB_Unknown = 0;
+      @env_PositionGB_P = 1;
+      
+      write("Error = System LOKED");
+    }
+  }
+}

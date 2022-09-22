@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<testmodule starttime="2022-04-20 11:54:00" timestamp="   4.620000" verdicts="2_basic">
+  <violation timestamp="   4.620000" type="warning" result="warn">This is only a DEMO variant of CANoe!</violation>
+  <testcase starttime="2022-04-20 11:54:00" timestamp="   4.620000">
+    <violation timestamp="   4.620000" type="warning" result="warn">This is only a DEMO variant of CANoe!</violation>
+    <teststep timestamp="   4.620000" level="0" type="user" ident="1" result="na">Motor</teststep>
+    <teststep timestamp="   4.620000" type="user" ident="" result="pass">Motor stop : PASS</teststep>
+    <teststep timestamp="   4.620000" level="0" type="user" ident="2" result="na">KL Status</teststep>
+    <teststep timestamp="   4.620000" type="user" ident="" result="pass">Kl_15 OK : PASS</teststep>
+    <teststep timestamp="   4.620000" type="user" ident="" result="pass">Kl_50 OK : PASS</teststep>
+    <teststep timestamp="   4.620000" type="user" ident="" result="fail">Klemmen NON : FAIL</teststep>
+    <verdict time="2022-04-20 11:54:00" timestamp="   4.620000" endtime="2022-04-20 11:54:00" endtimestamp="   4.620000" result="fail" />
+    <title>testCase_01</title>
+  </testcase>
+  <verdict time="2022-04-20 11:54:00" timestamp="   4.620000" endtime="2022-04-20 11:54:00" endtimestamp="   4.620000" result="fail" />
+  <title>Test 5</title>
+  <testlogfiles>
+    <testlogfile file="" />
+  </testlogfiles>
+  <engineer>
+    <xinfo>
+      <name>Windows Login Name</name>
+      <description>nponomarenko</description>
+    </xinfo>
+  </engineer>
+  <testsetup>
+    <xinfo>
+      <name>Version</name>
+      <description>CANoe 10.0.77 (SP2)</description>
+    </xinfo>
+    <xinfo>
+      <name>Configuration</name>
+      <description>C:\Users\\nponomarenko\Desktop\Project\___Embedded\HomeWork_5\Configuration1.cfg</description>
+    </xinfo>
+    <xinfo>
+      <name>Configuration Comment</name>
+      <description></description>
+    </xinfo>
+    <xinfo>
+      <name>Database HW5 on CAN</name>
+      <description>C:\Users\nponomarenko\Desktop\Project\___Embedded\HomeWork_5\db\HW5.dbc (2022-04-15 13:05:23)</description>
+    </xinfo>
+    <xinfo>
+      <name>Test Module Name</name>
+      <description>Test 5</description>
+    </xinfo>
+    <xinfo>
+      <name>Test Module File</name>
+      <description>C:\Users\\nponomarenko\Desktop\Project\___Embedded\HomeWork_5\test\Test 5.can</description>
+    </xinfo>
+    <xinfo>
+      <name>Last modification of Test Module File</name>
+      <description>2022-04-20, 11:53:32</description>
+    </xinfo>
+    <xinfo>
+      <name>Windows Computer Name</name>
+      <description>NPONOMARENKO-NO</description>
+    </xinfo>
+  </testsetup>
+</testmodule>
+<!--footprint="3294483eaef7e8cb53dbd8611f04ec47" version="1"-->

@@ -1,0 +1,55 @@
+/*@!Encoding:1252*/
+includes
+{
+  
+}
+
+variables
+{
+  
+}
+
+
+testcase testCase_01()
+{
+  @env_KeyPosition = 0;
+  testStep("1", "Motor");
+  if(@env_MotorState == 0){
+    testStepPass("Motor stop : PASS");
+  }
+  else {
+    testStepFail("Motor Run : FAIL");
+  }
+  
+  testStep("2", "KL Status");
+  @env_KeyPosition = 0;
+  if (@env_KL15 == 0){
+    testStepPass("Kl_15 OK : PASS");
+  }
+  else {
+    testStepFail("Kl_15 NON : FAIL");
+  }
+  
+  @env_KeyPosition = 1;
+  if (@env_KL50 == 0){
+    testStepPass("Kl_50 OK : PASS");
+  }
+  else {
+    testStepFail("Kl_50 NON : FAIL");
+  }
+  
+  @env_KL50 = 1;
+  @env_KeyPosition = 2;
+  if ((@env_KLS == 1) && (@env_KL15 == 1))){
+    testStepPass("Klemmen OK : PASS");
+  }
+  else {
+    testStepFail("Klemmen NON : FAIL");
+  }
+  
+}
+
+MainTest() 
+{
+  testCase_01();
+}

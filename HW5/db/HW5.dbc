@@ -1,0 +1,121 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: Motor_01 GearBox_01 Diagnosis GearActuator_01 SecurityStatus_01 SMLS_01 BCM_01
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ GearBoxStatus : 0|8@1- (1,0) [0|1] "" Vector__XXX
+
+BO_ 1281 GearBoxStatus_01: 8 GearBox_01
+ SG_ GearBox_Position : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1911 Diagnosis_01: 8 Diagnosis
+ SG_ System_Status : 8|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MotorState : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1120 GearActuator_01: 8 GearActuator_01
+ SG_ GearBox_Position : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1024 SecurityStatus_01: 8 SecurityStatus_01
+ SG_ KeyPosition : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1280 MotorStatus_01: 8 Motor_01
+ SG_ MotorState : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1104 Smls_01: 8 SMLS_01
+ SG_ KL_S : 2|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ KL_50 : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ KL_15 : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 960 KlemmenStatus_01: 4 BCM_01
+ SG_ KL_S : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ KL_50 : 3|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ KL_15 : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+
+
+
+EV_ env_KL_Status: 0 [0|15] "" 0 1 DUMMY_NODE_VECTOR3 Vector__XXX;
+
+EV_ env_Key_In: 0 [0|1] "" 0 2 DUMMY_NODE_VECTOR3 Vector__XXX;
+
+EV_ env_Key_Near: 0 [0|1] "" 0 3 DUMMY_NODE_VECTOR3 Vector__XXX;
+
+EV_ env_Key_Out: 0 [0|1] "" 0 4 DUMMY_NODE_VECTOR3 Vector__XXX;
+
+EV_ env_PositionGB_Error: 0 [0|1] "" 0 5 DUMMY_NODE_VECTOR3 Vector__XXX;
+
+EV_ env_PositionGB_R: 0 [0|1] "" 0 6 DUMMY_NODE_VECTOR3 Vector__XXX;
+
+EV_ env_PositionGB_S: 0 [0|1] "" 0 7 DUMMY_NODE_VECTOR3 Vector__XXX;
+
+EV_ env_PositionGB_D: 0 [0|1] "" 0 8 DUMMY_NODE_VECTOR3 Vector__XXX;
+
+EV_ env_PositionGB_N: 0 [0|1] "" 0 9 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ env_PositionGB_P: 0 [0|1] "" 0 10 DUMMY_NODE_VECTOR3 Vector__XXX;
+
+EV_ env_PositionGB_Unknown: 0 [0|1] "" 0 11 DUMMY_NODE_VECTOR3 Vector__XXX;
+
+EV_ env_GearBoxPosition: 0 [0|15] "" 0 12 DUMMY_NODE_VECTOR3 Vector__XXX;
+
+EV_ env_System_Status: 0 [0|1] "" 0 13 DUMMY_NODE_VECTOR3 Vector__XXX;
+
+EV_ env_MotorState: 0 [0|1] "" 0 14 DUMMY_NODE_VECTOR3 Vector__XXX;
+
+EV_ env_KL50: 0 [0|1] "" 0 15 DUMMY_NODE_VECTOR3 Vector__XXX;
+
+EV_ env_KL15: 0 [0|1] "" 0 16 DUMMY_NODE_VECTOR3 Vector__XXX;
+
+EV_ env_KLS: 0 [0|1] "" 0 17 DUMMY_NODE_VECTOR3 Vector__XXX;
+
+EV_ env_KeyPosition: 0 [0|15] "" 0 18 DUMMY_NODE_VECTOR3 Vector__XXX;
+
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_ BU_  "CANoeJitterMax" INT 0 0;
+BA_DEF_ BU_  "CANoeJitterMin" INT 0 0;
+BA_DEF_ BU_  "CANoeDrift" INT 0 0;
+BA_DEF_ BU_  "CANoeStartDelay" INT 0 0;
+BA_DEF_DEF_  "BusType" "";
+BA_DEF_DEF_  "NodeLayerModules" "";
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "CANoeJitterMax" 0;
+BA_DEF_DEF_  "CANoeJitterMin" 0;
+BA_DEF_DEF_  "CANoeDrift" 0;
+BA_DEF_DEF_  "CANoeStartDelay" 0;
+

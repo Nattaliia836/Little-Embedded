@@ -1,0 +1,43 @@
+/*@!Encoding:1252*/
+includes
+{
+  
+}
+
+variables
+{
+  message MotorStatus_01 MotorStatus;
+  msTimer t_MotorStatus;
+  int s_MotorState = 0;
+  int s_KLS = 0;
+  int s_KL15 = 0;
+  int s_KL50 = 0;
+}
+
+on start {
+  setTimerCyclic(t_MotorStatus, 50);
+}
+
+on message KlemmenStatus_01{
+  s_KLS = this.KL_S;
+  s_KL15 = this.KL_15;
+  s_KL50 = this.KL_50;
+  if((this.KL_50 == 1) && (s_MotorState != 1)){
+    write("Try to START");
+    s_MotorState = 1;
+  }
+  if((this.KL_15 == 0) && (s_MotorState == 1)){
+    write("Try to STOP Motor");
+    s_MotorState = 0;
+    MotorStatus.MotorState = s_MotorState;
+    write("Motor stopped");
+  }
+}
+
+on timer t_MotorStatus{
+  if(s_KL15 == 1){
+    MotorStatus.MotorState = s_MotorState;
+    output(MotorStatus);
+  }
+  else MotorStatus.MotorState = 0;
+}

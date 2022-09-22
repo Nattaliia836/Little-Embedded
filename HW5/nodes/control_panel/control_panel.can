@@ -1,0 +1,166 @@
+/*@!Encoding:1252*/
+includes
+{
+  
+}
+
+variables
+{
+  message SecurityStatus_01 SecurityStatus;
+  msTimer t_SecurityStatus;
+  
+  
+  message Smls_01 Smls;
+  msTimer t_Smls;
+  
+  message GearActuator_01 GearActuator;
+  msTimer t_GearActuator;
+  
+  message Diagnosis_01 Diagnosis;
+  msTimer t_Diagnosis;
+}
+
+on start{
+  setTimerCyclic(t_SecurityStatus, 1000);
+  setTimerCyclic(t_Smls, 100);
+  setTimerCyclic(t_GearActuator, 100);
+  setTimerCyclic(t_Diagnosis, 100);
+  
+  @env_KL_Status = 0;
+  
+  @env_KeyPosition = 0;
+  @env_Key_Out = 0;
+  
+  @env_System_Status = 0;
+  @env_MotorState = 0;
+  
+  @env_GearBoxPosition = 0;
+  @env_PositionGB_Unknown = 1;
+}
+
+on timer t_SecurityStatus{
+  SecurityStatus.KeyPosition = @env_KeyPosition;
+  
+  @env_Key_Out = 1;
+  @env_Key_Near = 0;
+  @env_Key_In = 0;
+  switch (@env_KeyPosition){
+    case 0:
+      break;
+    case 1:
+      @env_Key_Out = 0;
+      @env_Key_Near = 1;
+      break;
+    case 2:
+      @env_Key_Out = 0;
+      @env_Key_In = 1;
+      break;
+  }
+  output(SecurityStatus);
+}
+
+on timer t_Smls{ 
+  
+  switch (@env_KL_Status){
+    case 0:
+      Smls.KL_S = 0;
+      Smls.KL_15 = 0;
+      Smls.KL_50 = 0;
+      break;
+    case 1:
+      Smls.KL_S = 1;
+      Smls.KL_15 = 0;
+      Smls.KL_50 = 0;
+      break;
+    case 2:
+      Smls.KL_S = 1;
+      Smls.KL_15 = 1;
+      Smls.KL_50 = 0;
+      break;
+    case 3:
+      Smls.KL_S = 1;
+      Smls.KL_15 = 1;
+      Smls.KL_50 = 1;
+      break;
+  }
+  
+  Smls.KL_S = @env_KLS;
+  Smls.KL_15 = @env_KL15;
+  Smls.KL_50 = @env_KL50;
+  
+  output(Smls);
+}
+
+on timer t_GearActuator{
+  GearActuator.GearBox_Position = @env_GearBoxPosition;
+  output(GearActuator);
+}
+
+on timer t_Diagnosis{
+  
+  output(Diagnosis);
+}
+
+//==========================================================================
+
+on message GearBoxStatus_01{
+  if(@env_System_Status != 1){
+    @env_PositionGB_Unknown = 1;
+    @env_PositionGB_P = 0;
+    @env_PositionGB_N = 0;
+    @env_PositionGB_D = 0;
+    @env_PositionGB_S = 0;
+    @env_PositionGB_R = 0;
+    @env_PositionGB_Error = 0;
+    
+    switch (@env_GearBoxPosition){
+      case 0:
+        break;
+      case 1:
+        @env_PositionGB_Unknown = 0;
+        @env_PositionGB_P = 1;
+        break;
+      case 2:
+        @env_PositionGB_Unknown = 0;
+        @env_PositionGB_N = 1;
+        break;
+      case 3:
+        @env_PositionGB_Unknown = 0;
+        @env_PositionGB_D = 1;
+        break;
+      case 4:
+        @env_PositionGB_Unknown = 0;
+        @env_PositionGB_S = 1;
+        break;
+      case 5:
+        @env_PositionGB_Unknown = 0;
+        @env_PositionGB_R = 1;
+        break;
+      case 6:
+        @env_PositionGB_Unknown = 0;
+        @env_PositionGB_Error = 1;
+        break;
+    }
+  }
+  else {
+    @env_GearBoxPosition = 1;
+    @env_PositionGB_Unknown = 0;
+    @env_PositionGB_P = 1;
+    @env_PositionGB_N = 0;
+    @env_PositionGB_D = 0;
+    @env_PositionGB_S = 0;
+    @env_PositionGB_R = 0;
+    @env_PositionGB_Error = 0;
+  }
+  
+}
+
+on message MotorStatus_01{
+  @env_MotorState = this.MotorState;
+}
+
+on message KlemmenStatus_01{
+  @env_KLS = this.KL_S;
+  @env_KL15 = this.KL_15;
+  @env_KL50 = this.KL_50;
+}
